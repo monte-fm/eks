@@ -11,8 +11,7 @@ resource "aws_eks_cluster" "eks_cluster" {
     ]
 
     security_group_ids = [
-      aws_security_group.eks_security_group.id,
-      aws_security_group.alb_sg.id
+      aws_security_group.eks_security_group.id
     ]
 
     subnet_ids = [
