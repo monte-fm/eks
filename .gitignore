@@ -1,0 +1,47 @@
+# from https://github.com/github/gitignore
+
+# Terraform files except terraform.tfstate (which should be configured with S3 backend)
+**/.terraform/plugins/
+*.tfstate
+*.tfstate.*
+**/.terraform/*
+
+# LetsEncrypt certificates
+.acme.sh/
+.ssh/
+.lego/
+
+# temp files
+/tmp/*
+*.retry
+
+# General
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Kitchen related files
+.kitchen/
+.kitchen.local.yml
